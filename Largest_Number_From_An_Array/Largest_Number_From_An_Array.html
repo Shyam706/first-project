@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number From An Array</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter first number:");
+        var b=prompt("Enter second number:");
+        var c=prompt("Enter third  number:");
+        
+        var ar=[];
+        ar.push(a);
+        ar.push(b);
+        ar.push(c);
+        
+        document.write("First Number is : "+a);
+        document.write('<br>');
+        document.write('<br>');
+        document.write("Second Number is : "+b);
+        document.write('<br>');
+        document.write('<br>');
+        document.write("Third Number is : "+c);
+        document.write('<br>');
+        document.write('<br>');
+
+        var d=(ar[0]>ar[1] && ar[0]>ar[2])?+a+" is the greatest number": (ar[0]<ar[1] && ar[1]>ar[2])?+b+" is the greatest number":+c+" is the greatest number";       
+        document.write(d); 
+        /*if(ar[0]>ar[1] && ar[0]>ar[2])
+        {
+            document.write(+a+ " is largest number");
+        }
+        else if(a) {
+
+        }
+        for(var i=0,j=1;i<ar.length;i++,j++)
+        {
+            if(ar[i]>ar[j])
+        }*/
+    </script>
+</body>
+</html>
