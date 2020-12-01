@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid Pattern</title>
+</head>
+<body>
+    <script>
+        var n=10;
+        var i;
+        for(i=0; i<n;i++)  
+        { 
+            for(var j=n;j>i+1;j--)
+            {
+                document.write('&nbsp &nbsp');
+            }
+            for(var k=0; k<i+1;k++)
+            {
+                document.write('*&nbsp &nbsp');
+            }
+            document.write('<br>');
+
+        }
+    </script>
+    
+    
+</body>
+</html>
