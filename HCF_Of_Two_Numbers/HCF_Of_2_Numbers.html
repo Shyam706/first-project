@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCF of 2 Numbers</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter first number:");
+        var m=prompt("Enter second number:");
+        document.write("The first number is:" +n);
+        document.write('<br>');
+        document.write('<br>') ;
+        document.write("The second number is:" +m);
+        document.write('<br>');
+        document.write('<br>') ;
+
+        if (n!=null && m!=null) 
+        {
+            document.write("The factors of "+n+" are :"); 
+            var factors1= [];
+            for(i=1;i<=n;i++) 
+            {
+                if(n%i==0) 
+                {
+                    factors1.push(i);
+                }
+            }
+            document.write(factors1); 
+            document.write('<br>') ;
+            document.write('<br>') ; 
+            document.write("The factors of "+m+" are :"); 
+            var factors2= [];
+            for(i=1;i<=m;i++) 
+            {
+                if(m%i==0) 
+                {
+                    factors2.push(i);
+                }
+            }
+            document.write(factors2);
+            document.write('<br>') ;
+            document.write('<br>') ;
+            document.write("The Common Factors between "+n+" and "+m+" are :");       
+            var cf=[];
+                for(var i=0;i<factors1.length;i++)
+                {
+                    for(var j=0;j<factors2.length;j++)
+                    {
+                        if(factors1[i]==factors2[j])
+                        {
+                            cf.push(factors1[i]);                          
+                        }
+                    }
+                }
+                document.write(cf);
+                document.write('<br>');
+                document.write('<br>') ;
+                document.write("The hcf of "+n+" and "+m+" are :");
+                len=cf.length;
+                document.write(cf [len-1]);
+        }
+    </script>
+</body>
+</html>
