@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition,Subtraction,Division and Multiplication on different button clicks using functions</title>
+</head>
+
+<body>
+    <h1>A Program for Addition,Subtraction,Division and Multiplication on different button clicks using functions</h1>
+    
+    <button onclick="addition(x,y)">Addition</button>
+    <button onclick="sub(x,y)">Subtraction</button>
+    <button onclick="div(x,y)">Division</button>
+    <button onclick="mul(x,y)">Multiplication</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+        var x = prompt("Enter First Number : ");
+        var y = prompt("Enter Second Number : ");        
+    </script>
+
+    <script>
+        function addition(a, b) {
+            var a, b, result;
+            result = a + b;
+            document.getElementById("p1").innerHTML = result;
+        }
+        function sub(a, b) {
+            var a, b, result;
+            result = a - b;
+            document.getElementById("p2").innerHTML = result;
+        }
+        function div(a, b) {
+            var a, b, result;
+            result = a / b;
+            document.getElementById("p3").innerHTML = result;
+        }
+        function mul(a, b) {
+            var a, b, result;
+            result = a * b;
+            document.getElementById("p4").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
